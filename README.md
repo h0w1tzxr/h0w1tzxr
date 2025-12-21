@@ -30,13 +30,6 @@
 
 ---
 
-## 🎮 Operator Console
-**Class:** CTF Player (Rev / Pwn / OSINT)  
-**Build:** Vulnerability research + security tooling  
-**Level:** Beginner 
-
----
-
 <p align="center">
   <img src="./assets/pacman.svg" alt="pacman contribution graph" />
 </p>
