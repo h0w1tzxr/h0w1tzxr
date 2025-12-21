@@ -1,4 +1,4 @@
-name: Metrics (HTB Dark Green)
+name: Metrics (HTB Dashboard)
 
 on:
   schedule:
@@ -9,67 +9,130 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Generate metrics (terminal theme)
+      - name: Generate (Modern)
         uses: lowlighter/metrics@latest
         with:
           user: h0w1tzxr
           token: ${{ secrets.GITHUB_TOKEN }}
-          template: terminal
-          filename: github-metrics.svg
-          
+          template: classic
+          filename: metrics/01-modern.svg
           config_timezone: Asia/Jakarta
           config_display: large
-
+          config_animations: yes
           base: header, activity, repositories
-
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_sections: most-used
-
+          plugin_lines: yes
+          plugin_followup: yes
           plugin_habits: yes
-          plugin_habits_from: 200
           plugin_habits_days: 14
           plugin_habits_charts: yes
           plugin_habits_trim: yes
+          extras_css: |
+            svg { background:#0d1117 !important; }
+            text { fill:#c9d1d9 !important; }
+            a, .url { fill:#39d353 !important; }
+            .label, .field text { fill:#c9d1d9 !important; }
+            /* soft green accent */
+            .separator, .divider { opacity:.25 !important; }
+            /* subtle border feel (works in many renders) */
+            svg { border-radius: 14px; }
 
+      - name: Generate (Cybersecurity)
+        uses: lowlighter/metrics@latest
+        with:
+          user: h0w1tzxr
+          token: ${{ secrets.GITHUB_TOKEN }}
+          template: classic
+          filename: metrics/02-cybersecurity.svg
+          config_timezone: Asia/Jakarta
+          config_display: large
+          config_animations: yes
+          base: header, activity, repositories
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
           plugin_lines: yes
-
           plugin_followup: yes
-
           plugin_achievements: yes
           plugin_achievements_threshold: C
           plugin_achievements_display: compact
-          plugin_achievements_secrets: yes
-
-          config_theme: dark
           extras_css: |
-            /* HTB-ish: dark bg + cyber green headings */
-            :root { --htb-green: #39d353; --bg: #0d1117; --fg: #c9d1d9; }
-            body, .container { background: var(--bg) !important; }
-            h1, h2, h3, .field h2, .field h3 { color: var(--htb-green) !important; }
-            .field, .label, text { fill: var(--fg) !important; color: var(--fg) !important; }
-            a, .url { color: var(--htb-green) !important; }
-            .separator { opacity: 0.25 !important; }
-            /* Many charts use strokes/fills; this helps “greenify” them */
-            .chart, .chart * { stroke: var(--htb-green) !important; }
-            .progress, .progress * { stroke: var(--htb-green) !important; fill: var(--htb-green) !important; }
+            svg { background:#0b0f14 !important; }
+            text { fill:#d1d7e0 !important; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
+            a, .url { fill:#39d353 !important; }
+            /* stronger green highlights */
+            .field text { fill:#39d353 !important; }
+            .separator, .divider { opacity:.22 !important; }
 
-      - name: Commit & push (main)
+      - name: Generate (HackTheBox)
+        uses: lowlighter/metrics@latest
+        with:
+          user: h0w1tzxr
+          token: ${{ secrets.GITHUB_TOKEN }}
+          template: classic
+          filename: metrics/03-htb.svg
+          config_timezone: Asia/Jakarta
+          config_display: large
+          config_animations: yes
+          base: header, activity, repositories
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_habits: yes
+          plugin_habits_days: 14
+          plugin_habits_charts: yes
+          plugin_lines: yes
+          plugin_followup: yes
+          extras_css: |
+            svg { background:#05080a !important; }
+            text { fill:#b9c0ca !important; }
+            a, .url { fill:#39d353 !important; }
+            /* neon-ish headings */
+            .field text { fill:#39d353 !important; }
+            /* “panel” feel */
+            svg { border-radius: 14px; }
+            /* try to greenify strokes in charts (best-effort) */
+            path, line, polyline, circle { stroke:#39d353 !important; }
+
+      - name: Generate (Aesthetic)
+        uses: lowlighter/metrics@latest
+        with:
+          user: h0w1tzxr
+          token: ${{ secrets.GITHUB_TOKEN }}
+          template: classic
+          filename: metrics/04-aesthetic.svg
+          config_timezone: Asia/Jakarta
+          config_display: large
+          config_animations: yes
+          base: header, activity, repositories
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_languages: yes
+          plugin_languages_limit: 6
+          plugin_languages_details: percentage
+          plugin_followup: yes
+          extras_css: |
+            svg { background:#0d1117 !important; }
+            text { fill:#c9d1d9 !important; }
+            a, .url { fill:#7ee787 !important; }
+            .separator, .divider { opacity:.18 !important; }
+            svg { border-radius: 18px; }
+
+      - name: Commit & push panels
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-metrics.svg
-          git commit -m "chore: update github metrics" || exit 0
+          git add metrics/*.svg
+          git commit -m "chore: update metrics panels" || exit 0
           git push
