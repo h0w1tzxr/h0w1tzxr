@@ -4,6 +4,11 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:0d1117,100:0b3d1a&text=h0w1tzxr&fontColor=39d353&fontSize=58&animation=twinkling&desc=CTF%20%E2%80%A2%20Rev%20/%20Pwn%20/%20Web%20%E2%80%A2%20Vuln%20Research%20%E2%80%A2%20Tooling&descAlignY=72" />
 </p>
 
+<!-- Intro GIF -->
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW50ZnQ5b283aGZ0YmhnOXJ4NGlxbnFqYmZwdWdxNTV4Y2N0a2w3MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" width="420" />
+</p>
+
 <p align="center">
   <a href="https://app.hackthebox.com/users/1185864">
     <img alt="Hack The Box Badge" src="https://www.hackthebox.eu/badge/image/1185864" />
@@ -25,41 +30,19 @@
 
 ---
 
-## 🎮 Player Console
-**Class:** CTF Player (Rev / Pwn / Web)  
+## 🎮 Operator Console
+**Class:** CTF Player (Rev / Pwn / OSINT)  
 **Build:** Vulnerability research + security tooling  
-**Playstyle:** Experimental
-
-### ✅ Current quests
-- Rev/Pwn/Web reps (quality > quantity)
-- Root-cause analysis & repro notes (when allowed)
-- Building small tools that speed up CTF workflows
+**Level:** Beginner 
 
 ---
 
-## 🧩 Featured modules
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=h0w1tzxr&repo=CTF-Foresty-2025&hide_border=true&bg_color=0d1117&title_color=39d353&text_color=c9d1d9" />
+  <img src="./github-snake-dark.svg" />
 </p>
 
 ---
 
-## 🐍 Activity animation
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/h0w1tzxr/h0w1tzxr/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/h0w1tzxr/h0w1tzxr/output/github-snake.svg" />
-    <img alt="github snake" src="https://raw.githubusercontent.com/h0w1tzxr/h0w1tzxr/output/github-snake-dark.svg" />
-  </picture>
-</p>
-
----
-
-## 🧠 Metrics card
-<p align="center">
-  <img src="https://raw.githubusercontent.com/h0w1tzxr/h0w1tzxr/main/github-metrics.svg" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=h0w1tzxr&theme=matrix&no-frame=true&no-bg=true&row=1&column=7" />
+  <img src="./github-metrics.svg" />
 </p>
