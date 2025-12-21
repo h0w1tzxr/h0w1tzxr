@@ -1,8 +1,8 @@
-name: Metrics (Cyber Glass Aesthetic)
+name: Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 0 * * 0" # weekly
   workflow_dispatch:
 
 permissions:
@@ -17,25 +17,24 @@ jobs:
         with:
           ref: main
 
-      - name: Generate aesthetic metrics card
+      - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: h0w1tzxr
 
-          # Not terminal
           template: classic
           filename: github-metrics.svg
 
           config_timezone: Asia/Jakarta
           config_display: large
           config_animations: no
-          config_padding: 8, 12%
-
-          # "Essential but populated"
-          base: header, activity, repositories
+          config_padding: 6, 12%
+          config_order: base.header, isocalendar, languages, lines
+          
+          base: header
           base_indepth: no
-
+          
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -44,54 +43,14 @@ jobs:
           plugin_languages_details: percentage
 
           plugin_lines: yes
-          plugin_followup: yes
 
           extras_css: |
-            :root{
-              --bg0:#0b0f14;
-              --bg1:#0d1117;
-              --fg:#c9d1d9;
-              --muted:#8b949e;
-              --g:#39d353;       /* cyber green */
-              --g2:#7ee787;      /* soft green */
-              --panel:rgba(13,17,23,.72);
-              --border:rgba(57,211,83,.22);
-            }
+            /* ==== Core palette ==== */
+            svg { background:#0d1117 !important; }
+            text { fill:#c9d1d9 !important; }
+            .separator, .divider { opacity:.14 !important; }
 
-            /* Matte + subtle gradient */
-            svg{
-              background: radial-gradient(1200px 600px at 20% 0%, rgba(57,211,83,.10), transparent 60%),
-                          radial-gradient(900px 500px at 100% 10%, rgba(126,231,135,.08), transparent 55%),
-                          linear-gradient(180deg, var(--bg0), var(--bg1)) !important;
-              border-radius: 16px;
-            }
-
-            /* “Glass panel” feel */
-            .container, .field{
-              background: var(--panel) !important;
-              border: 1px solid var(--border) !important;
-              border-radius: 14px !important;
-            }
-
-            /* Text */
-            text{ fill: var(--fg) !important; }
-            .label text, .field .label, .subtitle, .description { fill: var(--muted) !important; }
-
-            /* Links + headings in green */
-            a, .url{ fill: var(--g) !important; }
-            h1, h2, h3, .field h2, .field h3 { fill: var(--g) !important; }
-
-            /* Softer separators */
-            .separator, .divider { opacity: .14 !important; }
-
-            /* Try to “greenify” chart strokes without overdoing it */
-            path, line, polyline { stroke: rgba(57,211,83,.65) !important; }
-            circle { stroke: rgba(57,211,83,.55) !important; }
-
-      - name: Commit & push (main)
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-metrics.svg
-          git commit -m "chore: update github metrics" || exit 0
-          git push
+            /* Kill GitHub-blue accents -> cyber green */
+            a, .url { fill:#39d353 !important; }
+            [fill="#58a6ff"], [fill="#1f6feb"], [fill="#0969da"] { fill:#39d353 !important; }
+            [stroke="#58a6ff"], [stroke="#1f6feb"], [stroke]()
