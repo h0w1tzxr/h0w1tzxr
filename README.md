@@ -40,3 +40,11 @@
 <p align="center">
   <img src="./assets/pacman.svg" alt="pacman contribution graph" />
 </p>
+
+---
+
+<p align="center">
+  <img src="./github-metrics.svg" alt="metrics" />
+</p>
+
+---
