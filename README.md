@@ -28,16 +28,6 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=h0w1tzxr&bg_color=0d1117&color=39d353&line=39d353&point=c9d1d9&area=true&hide_border=true" />
 </p>
 
----
-
 <p align="center">
   <img src="./assets/pacman.svg" alt="pacman contribution graph" />
 </p>
-
----
-
-<p align="center">
-  <img src="./github-metrics.svg" alt="metrics" />
-</p>
-
----
