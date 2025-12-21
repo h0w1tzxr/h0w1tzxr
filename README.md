@@ -38,11 +38,10 @@
 ---
 
 <p align="center">
-  <img src="./github-snake-dark.svg" />
+  <img src="./metrics/01-modern.svg" width="49%" />
+  <img src="./metrics/02-cybersecurity.svg" width="49%" />
 </p>
-
----
-
 <p align="center">
-  <img src="./github-metrics.svg" />
+  <img src="./metrics/03-htb.svg" width="49%" />
+  <img src="./metrics/04-aesthetic.svg" width="49%" />
 </p>
