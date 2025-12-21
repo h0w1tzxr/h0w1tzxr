@@ -1,0 +1,37 @@
+name: Generate Pacman (dark -> main)
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pacman:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Generate pacman contribution graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: h0w1tzxr
+
+      - name: Move dark svg into repo
+        run: |
+          mkdir -p assets
+          # action generates files into dist/
+          cp dist/pacman-contribution-graph-dark.svg assets/pacman.svg
+
+      - name: Commit & push (main)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/pacman.svg
+          git commit -m "chore: update pacman svg" || exit 0
+          git push
