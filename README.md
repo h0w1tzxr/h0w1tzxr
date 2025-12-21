@@ -38,10 +38,5 @@
 ---
 
 <p align="center">
-  <img src="./metrics/01-modern.svg" width="49%" />
-  <img src="./metrics/02-cybersecurity.svg" width="49%" />
-</p>
-<p align="center">
-  <img src="./metrics/03-htb.svg" width="49%" />
-  <img src="./metrics/04-aesthetic.svg" width="49%" />
+  <img src="./assets/pacman.svg" alt="pacman contribution graph" />
 </p>
