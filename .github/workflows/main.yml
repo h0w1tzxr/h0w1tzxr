@@ -1,0 +1,86 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Profile Maintenance & Stats Generation
+# Generates: Profile Summary Cards, Pacman Contribution Graph
+# Schedule: Every 5 days at randomized time
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: Update Profile
+
+on:
+  schedule:
+    # Every 5 days at 03:17 UTC
+    - cron: "17 3 */5 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # ─────────────────────────────────────────────────────────────────────────
+      # Checkout Repository
+      # ─────────────────────────────────────────────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ─────────────────────────────────────────────────────────────────────────
+      # Generate Profile Summary Cards
+      # Creates SVG cards in profile-summary-card-output/
+      # ─────────────────────────────────────────────────────────────────────────
+      - name: Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@v0.6.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          THEME: github_dark_green
+
+      # ─────────────────────────────────────────────────────────────────────────
+      # Generate Pacman Contribution Graph
+      # Creates pacman SVG in dist/
+      # ─────────────────────────────────────────────────────────────────────────
+      - name: Pacman Graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+      # ─────────────────────────────────────────────────────────────────────────
+      # Organize Assets & Deploy
+      # ─────────────────────────────────────────────────────────────────────────
+      - name: Organize and Deploy
+        run: |
+          set -e
+          
+          # Create assets directory if not exists
+          mkdir -p assets
+          
+          # Copy pacman graph to assets
+          if [ -f "dist/pacman-contribution-graph-dark.svg" ]; then
+            cp dist/pacman-contribution-graph-dark.svg assets/pacman.svg
+            echo "✓ Pacman graph copied"
+          fi
+          
+          # Validate README
+          if [ -f "README.md" ]; then
+            grep -q "constantines" README.md && echo "✓ README validated"
+          fi
+          
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Stage changes
+          git add -A
+          
+          # Commit only if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "update stats"
+            git push
+            echo "✓ Changes pushed"
+          fi
