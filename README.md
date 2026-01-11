@@ -10,7 +10,17 @@
 <br/>
 
 <!-- Profile GIF -->
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW50ZnQ5b283aGZ0YmhnOXJ4NGlxbnFqYmZwdWdxNTV4Y2N0a2w3MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" width="240" />
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW50ZnQ5b283aGZ0YmhnOXJ4NGlxbnFqYmZwdWdxNTV4Y2N0a2w3MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" width="340" />
+
+<br/><br/>
+
+<div align="center">
+
+<br/>
+
+<a href="https://tryhackme.com/p/constantines">
+  <img src="https://tryhackme-badges.s3.amazonaws.com/constantines.png" alt="TryHackMe Badge" />
+</a>
 
 <br/><br/>
 
@@ -36,161 +46,7 @@
 
 <div align="center">
 
-## 🎯 Training Grounds
-
-<br/>
-
-<a href="https://tryhackme.com/p/constantines">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/constantines.png" alt="TryHackMe Badge" />
-</a>
-
-<br/><br/>
-
-<a href="https://tryhackme.com/p/constantines">
-  <img src="https://img.shields.io/badge/TryHackMe-constantines-39d353?style=for-the-badge&logo=tryhackme&logoColor=white&labelColor=0d1117" />
-</a>
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 🔥 Domains
-
-<br/>
-
-<!-- Primary Focus -->
-<a href="#"><img src="https://img.shields.io/badge/🔓_Binary_Exploitation-39d353?style=for-the-badge&labelColor=0d1117" /></a>
-<a href="#"><img src="https://img.shields.io/badge/🔍_Reverse_Engineering-39d353?style=for-the-badge&labelColor=0d1117" /></a>
-
-<br/>
-
-<!-- Secondary Focus -->
-<a href="#"><img src="https://img.shields.io/badge/⚡_Hardware%20%2F%20IoT-238636?style=for-the-badge&labelColor=0d1117" /></a>
-<a href="#"><img src="https://img.shields.io/badge/🌐_Web_Exploitation-238636?style=for-the-badge&labelColor=0d1117" /></a>
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## ⚔️ Arsenal
-
-</div>
-
-<br/>
-
-<!-- Languages & Platforms Side by Side -->
-<table align="center">
-<tr>
-<td align="center" width="50%">
-
-### 💻 Languages
-
-<br/>
-
-<!-- Proficient -->
-<a href="#"><img src="https://skillicons.dev/icons?i=python,bash&theme=dark" /></a>
-
-<br/>
-
-<img src="https://img.shields.io/badge/Python-Scripting-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Bash-Automation-4EAA25?style=flat-square&logo=gnubash&logoColor=white&labelColor=0d1117" />
-
-<br/><br/>
-
-<!-- Learning -->
-<a href="#"><img src="https://skillicons.dev/icons?i=c,cpp,cs,rust&theme=dark" /></a>
-
-<br/>
-
-<img src="https://img.shields.io/badge/C%2FC%2B%2B%2FC%23-Learning-6e7681?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Rust-Learning-6e7681?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/x86%2Fx64_ASM-Learning-6e7681?style=flat-square&labelColor=0d1117" />
-
-</td>
-<td align="center" width="50%">
-
-### 🖥️ Platform
-
-<br/>
-
-<a href="#"><img src="https://skillicons.dev/icons?i=linux,docker&theme=dark" /></a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/EndeavourOS-Baremetal-7f3fbf?style=for-the-badge&logo=archlinux&logoColor=white&labelColor=0d1117" />
-
-<br/>
-
-<img src="https://img.shields.io/badge/Arch_Based-BTW-1793D1?style=flat-square&logo=archlinux&logoColor=white&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=0d1117" />
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 🛠️ Toolkit
-
-<br/>
-
-<!-- Disassembly / Decompilation -->
-<img src="https://img.shields.io/badge/Ghidra-Decompiler-e34c26?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/IDA-Disassembler-5c5c5c?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Frida-Instrumentation-4a154b?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Radare_2-Cutter-4a154b?style=for-the-badge&labelColor=0d1117" />
-
-<br/><br/>
-
-<!-- Debugging -->
-<img src="https://img.shields.io/badge/pwndbg-Debugger_+_Exploit_Dev-39d353?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/GEF-Debugger_+_Exploit_Dev-39d353?style=for-the-badge&labelColor=0d1117" />
-
-<br/>
-
-<br/><br/>
-
-<!-- Hardware / IoT -->
-<img src="https://img.shields.io/badge/Saleae_&_Sigrok_PulseView-Logic_Analyzer-00979D?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Glasgow_C3-UART%2FSPI%2FI2C-00979D?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Flipper_Zero-Hardware-00979D?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/ImHex_&_binwalk-Binary_Patching-00979D?style=flat-square&labelColor=0d1117" />
-
-<br/>
-<!-- Radio -->
-<img src="https://img.shields.io/badge/Universal_Radio_Hacker-SDR -00979D?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/HackRF-SDR-00979D?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/BladeRF_2.0-SDR-00979D?style=flat-square&labelColor=0d1117" />
-
-<br/><br/>
-
-<!-- Web / Network -->
-<img src="https://img.shields.io/badge/Burp_Suite-Web_Proxy-ff6633?style=flat-square&logo=burpsuite&logoColor=white&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Wireshark-Packets-1679A7?style=flat-square&logo=wireshark&logoColor=white&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/RustScan-Scanning-39d353?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/ffuf-Fuzzing-39d353?style=flat-square&labelColor=0d1117" />
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 📊 Metrics
+## Metrics
 
 <br/>
 
@@ -237,25 +93,3 @@
 </div>
 
 <br/>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 📚 Currently Learning
-
-<br/>
-
-<!-- Learning Cards -->
-<a href="#"><img src="https://img.shields.io/badge/📖_Stack_Buffer_Overflows-ret2win%2C_ret2shellcode-39d353?style=for-the-badge&labelColor=0d1117" /></a>
-
-<a href="#"><img src="https://img.shields.io/badge/📖_Format_String_Bugs-read%2Fwrite_primitives-39d353?style=for-the-badge&labelColor=0d1117" /></a>
-
-<a href="#"><img src="https://img.shields.io/badge/📖_Return_Oriented_Programming-ROP_chain_basics-39d353?style=for-the-badge&labelColor=0d1117" /></a>
-
-<a href="#"><img src="https://img.shields.io/badge/📖_ELF_Binary_Internals-sections%2C_symbols%2C_relocations-238636?style=for-the-badge&labelColor=0d1117" /></a>
-
-<a href="#"><img src="https://img.shields.io/badge/📖_x86%2Fx64_Assembly-registers%2C_calling_conventions-238636?style=for-the-badge&labelColor=0d1117" /></a>
-
-<a href="#"><img src="https://img.shields.io/badge/📖_UART%2FSPI%2FI2C_Basics-hardware_protocols-6e7681?style=for-the-badge&labelColor=0d1117" /></a>
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0d1117,50:0a1f12,100:39d353&section=footer" width="100%" />
