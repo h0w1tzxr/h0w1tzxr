@@ -39,26 +39,19 @@
 
 <h2 align="center"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/icons/metrics.svg" width="22" alt="" /> Metrics</h2>
 
-<div align="center">
+<p align="center">
+  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/0-profile-details.svg" width="700" alt="GitHub profile details" />
+</p>
 
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/0-profile-details.svg" alt="GitHub profile details" />
+<p align="center">
+  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/1-repos-per-language.svg" width="340" alt="Top languages by repository" />
+  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/3-stats.svg" width="340" alt="GitHub stats" />
+</p>
 
-  <br/>
+<p align="center">
+  <a href="https://github.com/h0w1tzxr"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/streak.svg" width="700" alt="GitHub contribution streak" /></a>
+</p>
 
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/1-repos-per-language.svg" alt="Top languages by repository" />
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/2-most-commit-language.svg" alt="Top languages by commit" />
-
-  <br/>
-
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/3-stats.svg" alt="GitHub stats" />
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/metrics/4-productive-time.svg" alt="Commits by hour" />
-
-  <br/><br/>
-
-  <a href="https://github.com/h0w1tzxr"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/streak.svg" alt="GitHub contribution streak" /></a>
-
-  <br/><br/>
-
-  <a href="https://github.com/h0w1tzxr"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/pacman.svg" width="100%" alt="Pacman contribution graph" /></a>
-
-</div>
+<p align="center">
+  <a href="https://github.com/h0w1tzxr"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/pacman.svg" width="700" alt="Pacman contribution graph" /></a>
+</p>
