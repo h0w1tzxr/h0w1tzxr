@@ -23,20 +23,6 @@
 
 <p>My current focus is reverse engineering and beginner exploit development across x86, x86_64, ARM, AArch64, MIPS, and AVR. I'm building stronger fundamentals in assembly-level debugging, ELF internals, dynamic linking, stack and heap behavior, firmware structure, and runtime analysis. Hardware security is my secondary but active path, especially embedded targets, physical interfaces, firmware behavior, and wireless attack surfaces.</p>
 
-<p>My approach is inspired by LiveOverflow's practical learning style. My goal is to grow into vulnerability research through analysis, hands-on practice, and a deeper understanding of systems.</p>
-
-<h2 align="center"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/icons/skills.svg" width="22" alt="" /> Skills</h2>
-
-<div align="center">
-
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/skill-icons.svg" width="860" alt="Arch Linux, Bash, C, Go, Rust, Python, Kali Linux, IDA Pro, pwndbg, and Rizin" />
-
-  <br/><br/>
-
-  <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/skills-panel.svg" width="860" alt="Technical stack for binary, exploit, embedded, and RF work" />
-
-</div>
-
 <h2 align="center"><img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/icons/metrics.svg" width="22" alt="" /> Metrics</h2>
 
 <p align="center">
