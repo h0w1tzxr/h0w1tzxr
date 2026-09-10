@@ -2,8 +2,6 @@
 
   <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/constantines-ascii.png" width="820" alt="CONSTANTINES ASCII header" />
 
-  <p><strong>Trying to understand systems by messing around with them until bugs appear and warranties also disappear.</strong></p>
-
   <img src="https://h0w1tzxr.github.io/h0w1tzxr-profile-assets/assets/hacker.gif" width="310" alt="Hacker at laptop animation" />
 
   <br/>
